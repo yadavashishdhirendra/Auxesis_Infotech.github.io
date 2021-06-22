@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #212038;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: AgencyFBBold;
+    src: url('../NFL-Chargers-2007.ttf.woff');
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+/* Mozilla Firefox */
+
+@-moz-document url-prefix() {
+    html, body {
+        scrollbar-width: none;
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.Auxesis__container {
+    position: relative;
+    max-width: 800px;
+    height: 100vh;
+    /* border: 1px solid white; */
+    margin: 65px auto;
+}
+
+/* Section Grid */
+
+/*  SECTIONS  */
+
+.Auxesis__section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+
+.Auxesis__col {
+    display: block;
+    float: left;
+    /* border: 1px solid white; */
+    margin: 0 0 0 1.6%;
+}
+
+.Auxesis__col:first-child {
+    margin-left: 0;
+}
+
+/*  GROUPING  */
+
+.Auxesis__group:before, .Auxesis__group:after {
+    content: "";
+    display: table;
+}
+
+.Auxesis__group:after {
+    clear: both;
+}
+
+.Auxesis__group {
+    zoom: 1;
+    /* For IE 6/7 */
+}
+
+/*  GRID OF THREE  */
+
+.span_3_of_3 {
+    width: 100%;
+}
+
+.span_2_of_3 {
+    width: 66.13%;
+}
+
+.span_1_of_3 {
+    width: 32.26%;
+}
+
+.Auxesis__Image img {
+    width: 100%;
+}
+
+.Auxesis__Text h1 {
+    text-align: center;
+}
+
+.Auxesis__Text {
+    position: relative;
+    top: -5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-family: "AgencyFBBold";
+}
+
+.H1__Text {
+    background-color: #3dd0d8;
+    color: white;
+    padding: 10px 0px 10px 0px;
+    letter-spacing: 1px;
+}
+
+.H1__Text1 {
+    background-color: #5c9ddd;
+    color: white;
+    padding: 10px 0px 10px 0px;
+    letter-spacing: 1px;
+}
+
+.H1__Text2 {
+    background-color: #7d69e6;
+    color: white;
+    padding: 10px 0px 10px 0px;
+    letter-spacing: 1px;
+}
+
+#Auxesis__Next__Container {
+    position: relative;
+    top: 60px;
+    background-color: #292945;
+    width: 100%;
+    border-radius: 6px;
+    min-height: 100vh;
+    font-family: "AgencyFBBold";
+    letter-spacing: 1px;
+}
+
+.Heading__Text h2 {
+    padding: 35px 35px 35px 35px;
+    color: white;
+}
+
+/* Blogs */
+
+.Auxesis__Blogs {
+    position: relative;
+    padding: 0px 30px 0px 35px;
+}
+
+.Auxesis__Blogs__nxt {
+    position: relative;
+    padding: 0px 30px 0px 140px;
+    top: 25px;
+    bottom: 25px;
+}
+
+.Auxesis__Blogs__nxt1 {
+    position: relative;
+    padding: 0px 30px 0px 240px;
+    top: 45px;
+    bottom: 25px;
+}
+
+.Auxesis__Blogs__nxt2 {
+    position: relative;
+    padding: 0px 30px 100px 35px;
+    top: 75px;
+}
+
+.Auxesis__Right__Text h3 {
+    color: white;
+}
+
+#Second__para {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .Auxesis__Blogs {
+        position: relative;
+        padding: 0px 30px 20px 35px;
+    }
+    .Auxesis__Blogs__nxt {
+        position: relative;
+        padding: 0px 30px 20px 35px;
+        top: 0;
+        bottom: 0;
+    }
+    .Auxesis__Blogs__nxt1 {
+        position: relative;
+        padding: 0px 30px 20px 35px;
+        top: 0;
+        bottom: 0;
+    }
+    .Auxesis__Blogs__nxt2 {
+        position: relative;
+        padding: 0px 30px 20px 35px;
+        top: 0;
+    }
+}
+
+.Auxesis__row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.Auxesis__Column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    /* background-color: orange; */
+    padding: 0px;
+    /* border: 1px solid white; */
+}
+
+.col__Circle_Img {
+    position: relative;
+    top: -20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.Full__Scol {
+    /* background-color: blue; */
+    padding: 7px 25px 7px 25px;
+    height: auto;
+}
+
+.Auxesis__Right__Text #First__para {
+    color: #6b6e86;
+    padding: 5px 0px 5px 0px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0px;
+    font-size: calc(8pt + 0.15vw);
+}
+
+#Right__side {
+    color: #42caca;
+    float: right;
+}
+
+.Auxesis__Two__col {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 7;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+    .Auxesis__col {
+        margin: 1% 0 1% 0%;
+    }
+    .span_3_of_3, .span_2_of_3, .span_1_of_3 {
+        width: 100%;
+    }
+}
+
+/* Form Starts here */
+
+.Auxesis__Form__Wrapper {
+    display: flex;
+    margin: 0px 30px 30px 35px;
+    /* background-color: red; */
+}
+
+.Auxesis__Form__Row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.Auxesis__Form__column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.Right__colform {
+    height: auto;
+}
+
+.Mid__colform {
+    height: auto;
+}
+
+.Left__colform {
+    height: auto;
+}
+
+input {
+    outline: none;
+    padding: 15px 50px 15px 20px;
+    background-color: black;
+    border: none;
+    color: white !important;
+    /* margin-bottom: 100px; */
+}
+
+.Textarea {
+    margin: 0px 45px 30px 35px;
+}
+
+@media screen and (max-width: 768px) {
+    .Auxesis__Form__column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+        margin-bottom: 20px;
+    }
+    .Textarea {
+        position: relative;
+        top: -18px;
+    }
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: none;
+    background-color: black;
+    resize: none;
+    outline: none;
+    color: white;
+}
+
+.Button {
+    margin: 0px 45px 30px 35px;
+}
+
+.btn {
+    margin-bottom: 100px;
+    padding: 12px 20px 12px 20px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #636363;
+    color: white;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3dd0d8, #5c9ddd, #7d69e6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3dd0d8, #5c9ddd, #7d69e6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: calc(8pt + 0.15vw);
+}
+
+/* Form Ends here */
