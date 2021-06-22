@@ -308,6 +308,7 @@ input {
     border: none;
     color: white !important;
     /* margin-bottom: 100px; */
+    font-family: 'Roboto', sans-serif;
 }
 
 .Textarea {
@@ -338,6 +339,7 @@ textarea {
     resize: none;
     outline: none;
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 .Button {
